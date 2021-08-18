@@ -104,6 +104,8 @@ body,h1,h2,h3,h4,h5 {font-family: 'Roboto Slab', serif;}
 
 .active, .dot:hover {
   background-color: #b3b3b3;
+  border-radius: 2pt;
+  border-color: #b3b3b3;
 }
 
 /* Fading animation */
@@ -113,6 +115,7 @@ body,h1,h2,h3,h4,h5 {font-family: 'Roboto Slab', serif;}
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
 
 @-webkit-keyframes fade {
   from {opacity: .4} 
@@ -130,20 +133,19 @@ body,h1,h2,h3,h4,h5 {font-family: 'Roboto Slab', serif;}
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-indigo w3-collapse w3-top w3-center" style="z-index:3;width:400px;font-weight:bold" id="mySidebar"><br>
   <h1 class="w3-padding-64 w3-center w3-text-dark-grey w3-xxxlarge"><b>Exclusive<br>Pool Service</b></h1>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">ABOUT</a> 
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
-  <a href="#poolservice" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">POOL SERVICE</a>
-  <a href="#poolrenovations" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">POOL RENOVATIONS</a>
-  <a href="#fencing" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">FENCING</a>
-  <a href="#decks" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">DECK & PATIOS</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">GET A QUOTE / CONTACT</a>
+  <a href="#about" onclick="w3_close()" class="navitem w3-bar-item w3-button w3-xlarge w3-hover-indigo">ABOUT</a> 
+  <a href="javascript:void(0)" onclick="w3_close()" class="navitem w3-bar-item w3-button w3-padding w3-hide-large w3-hover-indigo">CLOSE</a>
+  <a href="#poolservice" onclick="w3_close()" class="navitem w3-bar-item w3-button w3-xlarge w3-hover-indigo">POOL SERVICE</a>
+  <a href="#poolrenovations" onclick="w3_close()" class="navitem w3-bar-item w3-button w3-xlarge w3-hover-indigo">POOL RENOVATIONS</a>
+  <a href="#fencing" onclick="w3_close()" class="navitem w3-bar-item w3-button w3-xlarge w3-hover-indigo">FENCING</a>
+  <a href="#decks" onclick="w3_close()" class="navitem w3-bar-item w3-button w3-xlarge w3-hover-indigo">DECK & PATIOS</a>
+  <a href="#contact" onclick="w3_close()" class="navitem w3-bar-item w3-button w3-xlarge w3-hover-indigo">GET A QUOTE / CONTACT</a>
   <!-- <a href="#gallery" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">GALLERY</a>  -->
 </nav>
 
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-  <span class="w3-left w3-padding">Exclusive Pool Service</span>
-  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+  <span class="w3-left w3-padding-32 w3-margin-64"">Exclusive Pool Service</span>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -264,8 +266,8 @@ body,h1,h2,h3,h4,h5 {font-family: 'Roboto Slab', serif;}
           </ul>
         </div>
         
-        <div class="w3-full">
-          <ul class="servicecard w3-ul w3-light-grey w3-center ">
+        <div class="w3-full w3-margin-bottom">
+          <ul class="servicecard w3-ul w3-light-grey w3-center w3-round-xlarge">
             <li class="w3-white w3-xlarge w3-border w3-round-xlarge", id="fencing">DECKS & PATIOS</li>
             <li class="w3-padding-16">Web Design</li>
             <li class="w3-padding-16">Photography</li>
@@ -280,7 +282,7 @@ body,h1,h2,h3,h4,h5 {font-family: 'Roboto Slab', serif;}
           </ul>
         </div>
         <div class="w3-full w3-margin-bottom">
-          <ul class="servicecard w3-ul w3-light-grey w3-center ">
+          <ul class="servicecard w3-ul w3-light-grey w3-center w3-round-xlarge">
             <li class="w3-white w3-xlarge w3-border w3-round-xlarge">SALES</li>
             <li class="w3-padding-16">Web Design</li>
             <li class="w3-padding-16">Photography</li>
@@ -299,7 +301,7 @@ body,h1,h2,h3,h4,h5 {font-family: 'Roboto Slab', serif;}
   </div>
   
   <!-- Contact section -->
-  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+  <div class="w3-container w3-light-grey w3-padding-32" id="contact", style="border-radius: 20pt; margin: 10pt">
     <div class="w3-content" style="max-width:600px">
       <h2 class="w3-center"><b>QUOTE / CONTACT</b></h2>
       <p>See a service you're interested in? Know that there's a problem but don't know what it is? Looking to do something that isn't listed on this website?</p>
@@ -355,7 +357,7 @@ body,h1,h2,h3,h4,h5 {font-family: 'Roboto Slab', serif;}
     </div>
   </div> -->
   <!-- Footer -->
-  <footer class="w3-container w3-padding-32 w3-indigo">  
+  <footer class="w3-container w3-margin-32 w3-padding-32 w3-indigo", style="border-radius: 20pt; margin: 10pt">  
     <div class="w3-row-padding">
       <div class="w3-third">
         <h3>Website Design</h3>
@@ -390,7 +392,7 @@ body,h1,h2,h3,h4,h5 {font-family: 'Roboto Slab', serif;}
     </div>
   </footer>
   
-  <div class="w3-black w3-center w3-padding-54">
+  <div class="w3-black w3-center", style="border-radius: 20pt; margin: 10pt">
     <h3>WEBSITE DISCLAIMER</h3>
         <p>ALL INFORMATION ON THE SITE IS INTENDED FOR GENERAL INFORMATION. THIS SITE RESERVES THE RIGHT TO CORRECT ANY ERRORS, OMISSIONS, OR INACCURACIES, WE DO NOT ACCEPT ANY RESPONSIBILITY FOR THE ACCURACY, RELIABILITY, CURRENCY, OR COMPLETENESS OF ANY INFORMATION, CONTENT, MATERIALS, SERVICES, PRODUCTS, MERCHANDISE, FUNCTIONALITY, OR OTHER RESOURCE(S) AVAILABLE ON OR ACCESSIBLE THROUGH THE SERVICE (EVEN TYPOGRAPHICAL OR IMAGING ERRORS), INCLUDING SUBSTANCE, ACCURACY, OR SUFFICIENCY OF ANY SERVICE OR PRODUCT INFORMATION LISTED ON THE SERVICE.
         FURTHER, WE DO NOT REPRESENT THAT THE SERVICE WILL OPERATE WITHOUT INTERRUPTION OR ERROR, NOR DO WE PROVIDE ANY ASSURANCE OF THE AVAILABILITY OR USABILITY OF THE SHOPPING SERVICES OFFERED THROUGH THE SERVICE.
